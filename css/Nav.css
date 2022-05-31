@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+body{
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+header{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: white;
+	box-shadow: 0 5px 10px rgb(0, 0, 0,.1);
+	padding: 0px 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+header .logo{
+	height: 50px;
+}
+header .NavBar ul{
+	list-style: none;
+}
+
+header .NavBar ul li{
+	position: relative;
+	float: left;
+}
+header .NavBar ul li a,header .NavBar ul li.nom{
+	font-size: 20px;
+	padding: 20px;
+	color: #333;
+	display: block;
+}
+.nom{
+
+}
+header .NavBar ul li a:hover{
+	transition: .5s ease;
+	background: #333 ;
+	color: #fff;
+}
+
+#menu{
+	display: none;
+}
+
+header label{
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	display: none;
+}
+
+@media(max-width:994px){
+	header{
+		padding: 20px;
+	}
+	header label{
+		display: initial;
+	}
+	header .NavBar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #fff;
+		border-top: 1px solid rgb(0,0,0,1);
+		display: none;
+	}
+	header .NavBar ul li{
+		width: 100%;
+	}
+
+	#menu:checked~ .NavBar{
+		display: initial;
+	}
+}

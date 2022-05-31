@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/Estilos_registro.login.css">
+	<title>Registrate</title>
+</head>
+<body>
+	<h1>Formulario de registro</h1>
+		<form method="post" action="../PHP/registro.php" class="form_registro">
+			<h2 class="titulo">Crear cuenta</h2>
+			<div class="contenedor-imput">
+				<input type="text" class="info" name="nombre" placeholder="Nombre" required>
+				<input type="text" class="info" name="apellido" placeholder="apellido" required>
+				<input type="email" class="info" name="email" placeholder="Email" required>
+				<input type="text" class="info" name="usuario" placeholder="usuario" required>
+				<input type="password" class="info" name="contraseña" placeholder="contraseña" required>
+				<label for="check">administrador</label>
+				<input type="checkbox" id="check" class="check" name="check">
+				<div class="btn">
+					<input type="submit" name="boton">
+				</div>
+				
+				<p>¿Ya tienes tu cuenta?<a href="login_form.html">Ingresa aqui</a></p>
+			</div>
+		</form>
+</body>
+</html>
