@@ -18,7 +18,7 @@
 				<li> <a href="">About</a></li>
 				<li> <a href="">Tienda</a></li>
 				<li> <a href="">Contact</a></li>
-				<li> <a href="">Manage</a></li>
+				<li> <a href="../html/buscar.html">Manage</a></li>
 				<li class="nom"><?php echo "<p>Hola ".$_SESSION['nombre']." ".$_SESSION['apellido']."</p>";?></li>
 			</ul>
 		</nav>
