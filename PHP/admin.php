@@ -6,6 +6,17 @@
 	<title>Buscar</title>
 </head>
 <body>
+	<h1>Buscar</h1>
+	<form method="post" action="" class="form_TODO">
+			<h2 class="titulo">Ingresa</h2>
+			<div class="contenedor-imput">
+				<input type="text" class="info" name="dato" placeholder="Nombre de articulo">
+				<div class="btn">
+					<input type="submit" name="boton">
+				</div>
+			</div>
+		</form>
+		
 	<?php 
 		include('conexion.php');
 		$consulta = mysqli_query($conexion, "SELECT * FROM inventario");

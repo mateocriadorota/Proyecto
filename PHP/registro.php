@@ -14,18 +14,12 @@
 	$usuario = $_POST['usuario'];
 	$contraseña = md5($_POST['contraseña']);
 
-	if(isset($_POST['check'])){
-		$administrador = 1;
-	}else{
-		$administrador = 0;
-	}
-
 
 	include("conexion.php");
 
 	$_SESSION['nombre'] = $nombre;
 
-	$consulta = mysqli_query($conexion, "INSERT INTO usuarios (nombre, apellido, email, usuario, contraseña, administrador) VALUES('$nombre','$apellido','$email', '$usuario', '$contraseña', '$administrador')");
+	$consulta = mysqli_query($conexion, "INSERT INTO usuarios (nombre, apellido, email, usuario, contraseña) VALUES('$nombre','$apellido','$email', '$usuario', '$contraseña')");
 
 
 	header("Location:../html/login_form.html");

@@ -10,7 +10,7 @@ $precio=(int)$_POST['precio'];
 $query= mysqli_query($conexion,"INSERT INTO inventario (nombre, descripcion, precio)VALUES('$nombre','$descripcion','$precio')");
 
 if($query){
-    Header("Location:../html/buscar.html");
+    Header("Location:admin.php");
 } else {
     Header("Location:../html/buscar.html");
 }
