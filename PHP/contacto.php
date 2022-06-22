@@ -8,7 +8,7 @@
 
 	<title>MCR</title>
 </head>
-<body>
+<body id="bodyContacto">
 	<header>
 		<a href="index_administrador.php" class="logo"><img class="logo" src="../imagenes/logo.jpg"></a>
 		<input type="checkbox" id="menu">
@@ -26,10 +26,32 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="contenedorPrimal">
-		
+	<div id="contenedorContacto">
+		<section class="contact">
+        <div class="contact__right-side">
+            <h1 class="contact__title">Contact us</h1>
+            <form action="contact.php" method="post" class="contact__form-wrapper">
+                <div class="contact__input-line">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" name="name" id="name" class="contact__input" required>
+                </div>
+                <div class="contact__input-line">
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" name="email" id="email" class="contact__input" required>
+                </div>
+                <div class="contact__input-line">
+                    <label for="subject" class="contact__label">Subject</label>
+                    <input type="text" name="tema" id="tema" class="contact__input" required>
+                </div>
+                <div class="contact__input-line">
+                    <label for="message" class="contact__label">Message</label>
+                    <textarea type="text" name="message" id="message" class="contact__input--textarea" required></textarea>
+                </div>
+                <input type="submit" value="Send message" class="contact__submit-button">
+            </form>
+        </div>
+    </section>
 	</div>
-
 	<div class="contenedorFooter">
 		<footer id="pieDePag">
 	        <img class="logo" src="../imagenes/logo - copia.jpg" alt="LogoMCR">

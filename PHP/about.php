@@ -8,7 +8,7 @@
 
 	<title>MCR</title>
 </head>
-<body>
+<body id="bodyAbout">
 	<header>
 		<a href="index_administrador.php" class="logo"><img class="logo" src="../imagenes/logo.jpg"></a>
 		<input type="checkbox" id="menu">
@@ -26,8 +26,19 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="contenedorPrimal">
-		
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<h1 class="aboutTitle">About Us</h1>
+				</div>
+				<div class="content">
+					<h3>Optica MCR</h3>
+					<h4 class="aboutEslogan">Veamos hacia el futuro</h4>
+					<p>Somos una empresa comprometida con la calidad y precio que le brindamos usted. Creada en mayo de 2022, óptica MCR cuenta con tecnología punta para brindarle la mejor experiencia y comodidad, contamos con oftalmólogos de renombre internacional y herramientas de la mejor calidad.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="contenedorFooter">

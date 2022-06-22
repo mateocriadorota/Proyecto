@@ -24,11 +24,14 @@ if($resultado!=0){
 	if($respuesta['administrador']==1){
 		$_SESSION['nombre']=$respuesta['nombre'];
 		$_SESSION['apellido']=$respuesta['apellido'];
-		header("Location:index_administrador.php");
+		$_SESSION['administrador']=$respuesta['administrador'];
+
+		header("Location:shop.php");
 	}else{
 		$_SESSION['nombre']=$respuesta['nombre'];
 		$_SESSION['apellido']=$respuesta['apellido'];
-		header("Location:index_usuario.php");
+		$_SESSION['administrador']=$respuesta['administrador'];
+		header("Location:shop.php");
 	}
 	
 }else{
